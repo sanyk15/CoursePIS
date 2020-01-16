@@ -1,17 +1,21 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 
 namespace Models
 {
+    [DataContract]
     public class Statement
     {
+        [DataMember]
         public int Id { get; set; }
-        public int AccountantId { get; set; }
+        [DataMember]
         public double Salary { get; set; }
-        public string Date { get; set; }
+        [DataMember]
+        public DateTime Date { get; set; }
+        [DataMember]
         public string Period { get; set; }
-
-        public virtual User Accountant { get; set; }
 
         [ForeignKey("StatementId")]
         public virtual List<TableStatement> TableStatements { get; set; }

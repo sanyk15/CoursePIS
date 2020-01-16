@@ -54,8 +54,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ArchiveController.cs" />
+    <Compile Include="ClientContractController.cs" />
+    <Compile Include="ClientController.cs" />
+    <Compile Include="DiagramController.cs" />
+    <Compile Include="MainController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleController.cs" />
+    <Compile Include="TourController.cs" />
+    <Compile Include="UserController.cs" />
+    <Compile Include="ValidationController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
